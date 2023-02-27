@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+
+}
+:root
+{
+    --orange:orange;
+}
+:root
+{
+    --blanc:white;
+}
+:root
+{
+    --gris:rgb(135, 130, 130);
+}
+.container{
+    display: grid;
+    grid-template-rows: 10rem 62rem 50rem 50rem 1rem;  
+    gap: 3rem;
+    
+}
+
+.container >div:nth-child(1){
+    block-size: 35%;
+    display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+}
+.container >div:nth-child(1) >div:nth-child(1){
+    background-image: url(Logo.png);
+    width: 13rem;
+    block-size: 7em;
+}
+.container >div:nth-child(1)>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.container >div:nth-child(1) >div:nth-child(2) >div:nth-child(1){
+    color: var(--orange);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.container >div:nth-child(1) >div:nth-child(2)>div:nth-child(2){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.container >div:nth-child(1) >div:nth-child(3)>div:nth-child(3){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.container >div:nth-child(1) >div:nth-child(4)>div:nth-child(4){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+.container .partie_1{
+    block-size: 45rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.container .partie_1 .doom1{
+    background-image: url(Rectangle\ 48BG\ Slide\ \(1\).png);
+    block-size:100%;
+    color: white;
+   width: 100%;
+    background-size: cover;
+}
+.container .partie_1 .doom2{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0,0,0.5);
+}
+.container .partie_1 .doom2 .enfant1{
+   /* background-color: rgba(0, 0, 0, 0.5); */
+   position: relative;
+   margin-top: 2%;
+   block-size: 40rem;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   top: 5rem;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+   color: white;
+   width: 70%;
+}
+.container .partie_1 .doom2 .enfant1 .doom1_enfant1{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.container .partie_1 .doom2 .enfant1 .doom2_enfant1{
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.container .partie_1 .doom2 .enfant1 .doom3_enfant1{
+    block-size: 25%;
+    width: 40%;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.container .partie_1 .doom2 .enfant1 .enfant2{
+       display: flex;
+       justify-content: center;
+}
+.container .partie_1 .doom2 .enfant2 .doom1_enfant2{
+   border: 2px solid red;
+   background-color: red;
+   border-radius: 25px;
+   font-size: 2em;
+   block-size: 25%;
+   padding: 1rem 3rem;
+   margin-right: 2rem;
+}
+.container .partie_1 .doom2 .enfant2 .doom2_enfant2{
+    border: 2px solid white;
+    border-radius: 25px;
+    block-size: 25%;
+    padding:1rem 3rem;
+    margin-right: 2rem;
+   font-size: 2em;
+} 
+ .container .partie_1 .img{
+    position: absolute;
+    top: 63%;
+    left: 40%;
+    transform: translateX(-50%);
+    block-size: 60rem;
+    width: 30rem;
+    justify-content: center;
+   
+} 
+.container .partie_1 .img .niarry_telephone{
+    background-image: url(2telephones.png);
+    background-size: cover;
+    padding: 25rem 20rem;
+ } 
+ .container .partie_1  .trait_enDEssous{
+    border: 1px solid rgb(188, 182, 182);
+    width: 60%;
+    position: relative;
+    bottom: -75%;
+    margin: 0 auto;
+ }
+
+
+ .container .partie_2{
+    position: relative;
+    top: 40%;  
+ }
+ .container .partie_2 .titre{
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+.container .partie_2 .containeur_formulaire{
+    display: flex;
+    block-size: 60rem;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.container .partie_2 .containeur_formulaire .photo_formulaire{
+    background-image: url(RectangleImg2.png);
+    block-size: 100%;
+    padding: 10rem 12rem;
+    width: 30%;
+}
+.container .partie_2 .containeur_formulaire .create_login{
+    width: 50%;
+    position: relative;
+    top: 20%;
+}
+.container .partie_2 .containeur_formulaire .create_login .ligne_1{
+    color: var(--orange);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5rem;
+}
+.container .partie_2 .containeur_formulaire .create_login .ligne_2{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5rem;
+}
+.container .partie_2 .containeur_formulaire .create_login .ligne_3{
+  
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gris);
+}
+
+
+.container .partie_3{
+   position: relative;
+   top: 30%;
+   width: 80%;
+   margin: 0 auto;
+}
+.container .partie_3 .titre_3{
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    text-align: center;
+}
+.container .partie_3 .contenuPartie3{
+    display: flex;
+    position: relative;
+    block-size: 60rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .partie_3 .contenuPartie3 .create_loginPartie3{
+    
+    width: 50%;    
+}
+.container .partie_3 .contenuPartie3 .create_loginPartie3 .ligne_1{
+    color: var(--orange);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+       
+}
+.container .partie_3 .contenuPartie3 .create_loginPartie3 .ligne_2{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .partie_3 .contenuPartie3 .create_loginPartie3 .ligne_3{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gris);
+}
+.container .partie_3 .contenuPartie3 .photo_acceuil{
+    background-image: url(RectangleImg3.png);
+    block-size: 100%;
+    width: 30rem;
+}
+
+
+.container .footer{
+    position: relative;
+    top:0;
+    margin-top: 18rem;
+}
+.container .footer .contenu_footer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+}
+.container .footer .contenu_footer .logo_footer{ 
+    background-image: url(Logo.png);
+    padding: 3.2em 6em;
+}
+.container .footer .contenu_footer .reseaux_sociaux{ 
+   display: flex;
+   flex-basis: 23%;
+   padding: 2em 2em;
+   justify-content: space-between;
+}
+.container .footer .contenu_footer .reseaux_sociaux .tweeter{ 
+   background-image: url(Vector\ \(1\).png);
+  flex-basis: 2em;
+  block-size: 1.8em;
+ }
+ .container .footer .contenu_footer .reseaux_sociaux .facebook{ 
+    background-image: url(Vector.png);
+    flex-basis: 2em;
+    block-size: 1.8em;
+  }
+  .container .footer .contenu_footer .reseaux_sociaux .instagram{ 
+    background-image: url(instagramicone.png);
+    flex-basis: 2.5em;
+    block-size: 2.5em;
+  }
+@media screen and (max-width:1405px) {
+    body{
+        display: block;
+    }
+  .container{
+    width: 100%;
+  }
+  .container .div:nth-child(1){
+    overflow: hidden;
+  }
+}
+@media screen and (max-width:768px){
+    body{
+        display:block;
+    }
+    .container{
+        width: 100%;
+    }
+    .container .partie_1{
+        height:auto ;
+    }
+   
+    .container .partie_1 .img{
+      padding-top: 8rem;
+    }
+    .container .partie_2{
+        padding-top: 30rem;
+    }
+    .container .partie_3{
+        padding-top: 30rem;
+    }
+    .container .footer{
+        width: 100%;
+        padding-top:30rem;
+    }
+    .container .footer .reseaux_sociaux{
+        justify-content: space-between;
+        width: auto;
+    }
+}
+@media screen and (max-width:414px){
+    body{
+        display: block;
+    }
+    .container{
+        width: 80%;
+    }
+}
